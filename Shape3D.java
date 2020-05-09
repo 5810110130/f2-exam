@@ -1,5 +1,11 @@
-public abstract class Shape3D extends Shape implements AreaCalculable , VolumeCalculable {
+public abstract class Shape3D implements AreaCalculable , VolumeCalculable {
+    private String name;
+
     public Shape3D(String name){
-        super(name);
+        this.name = name;
+    }
+
+    public String getName(){
+        return name;
     }
 }
